@@ -26,7 +26,7 @@ public class NQueen {
                 board[i][col] = 1;
                 if (solveNQueen(board, col + 1, N))
                     return true;
-                board[i][col] = 0;
+                board[i][col] = 0; // backtracking if not satisfied
             }
         }
         return false;
